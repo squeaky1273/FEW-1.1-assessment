@@ -9,17 +9,17 @@ const changeWidth = document.getElementById('change-width')
 const changeHeight = document.getElementById('change-height')
 
 // Display Width
-inputWidth.addEventListener('change', function (e) {
+inputWidth.addEventListener('input', function (e) {
     displayWidth.innerHTML = inputWidth.value
 })
 
 // Display Height
-inputHeight.addEventListener('change', function (e) {
+inputHeight.addEventListener('input', function (e) {
     displayHeight.innerHTML = inputHeight.value
 })
 
 // Change Color
-inputColor.addEventListener('change', function (e) {
+inputColor.addEventListener('input', function (e) {
     displayColor.style.color = inputColor.value
 })
 
@@ -28,21 +28,15 @@ inputColor.addEventListener('input', function (e) {
     document.getElementById("hex").innerHTML = inputColor.value
 }, false)
 
-// Display Width
+// Change Width
 inputWidth.addEventListener('input', function (e) {
     changeWidth.style.width = inputWidth.value + "px"
 })
 
-// Display Height
+// Change Height
 inputHeight.addEventListener('input', function (e) {
     changeHeight.style.height = inputHeight.value + "px"
 })
-
-
-// var canvas = document.querySelector('canvas');
-// var ctx = canvas.getContext('2d');
-
-// ctx.strokeRect(0, 0, 100, 100);
 
 // range.addEventListener('input', function() {
 //     var newValue = this.value + "px";
