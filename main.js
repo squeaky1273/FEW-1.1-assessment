@@ -5,8 +5,7 @@ const displayWidth = document.getElementById('display-width')
 const displayHeight = document.getElementById('display-height')
 const displayColor = document.getElementById('display-color')
 
-const changeWidth = document.getElementById('change-width')
-const changeHeight = document.getElementById('change-height')
+const change = document.getElementById('change')
 
 // Display Width
 inputWidth.addEventListener('input', function (e) {
@@ -20,7 +19,7 @@ inputHeight.addEventListener('input', function (e) {
 
 // Change Color
 inputColor.addEventListener('input', function (e) {
-    displayColor.style.color = inputColor.value
+    change.style.backgroundColor = inputColor.value
 })
 
 // Display Color Hex
@@ -30,16 +29,10 @@ inputColor.addEventListener('input', function (e) {
 
 // Change Width
 inputWidth.addEventListener('input', function (e) {
-    changeWidth.style.width = inputWidth.value + "px"
+    change.style.width = inputWidth.value + "px"
 })
 
 // Change Height
 inputHeight.addEventListener('input', function (e) {
-    changeHeight.style.height = inputHeight.value + "px"
+    change.style.height = inputHeight.value + "px"
 })
-
-// range.addEventListener('input', function() {
-//     var newValue = this.value + "px";
-//     item.style.fontSize = newValue;
-//     current.innerHTML = newValue;
-//   });
